@@ -45,12 +45,7 @@ body{
 
 .navbar-brand p span { vertical-align: middle;}
 
-/* 화면크기 작아질시 사진 변화 */
-.container-fluid{background-color: #ba000d;
-                 justify-content: center;
-                 padding-left:120px;
-                 position: fixed;
-                 }
+
 
 .row{display:flex;
         position: relative;}
@@ -61,6 +56,12 @@ body{
 .nav-item{font-weight:600; }
 
 .jumbtron{margin:10px;}
+
+
+
+.dropdown-menu{ background-color: tomato;
+                color:black; }
+
 
 @media (min-width:850px) 
 {.navbar-toggler {display:none;}
@@ -76,6 +77,34 @@ body{
         }
 }
 
+.recommend-youtube{
+        position: relative;
+        border:2px solid #3f0c1f;
+        overflow:hidden;
+        width:200px;
+        height:200px;
+        margin:0 auto 15px;
+}
+
+.recommend-youtube span {
+        position: absolute;
+        bottom:0;
+        right:0;
+        width:100%;
+        text-align: center;
+        font-size:1.2em;
+        text-transform: uppercase;
+        background-color: #000;
+        color:#fff;
+        opacity :.8;
+}
+
+h2{color:black;}
+.text-center{color:black;}
+
+/* end header */
+
+/* 아래 3가지 사진 */
 #Recommend, #regist, #map {
         height: 250px;
         width: 100%;
@@ -85,16 +114,90 @@ body{
         overflow:hidden;
 }
 
+      
 #Recommend:hover, #regist:hover, #map:hover {
         box-shadow: 0 1px 5px 1px #cccccc;
 
 }
 
- 
+#Recommend {
+        background: url('../youtube1.jpg') no-repeat;
+        background-position: center;
+}
+
+#regist {
+        background: url('../youtube1.jpg') no-repeat;
+        background-position: center;
+} 
+
+#Recommend span, #regist span, #map span{
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width:100%;
+        text-align: center;
+        font-size: 1.6em;
+        text-transform: uppercase;
+        background-color: #000;
+        color:#fff;
+        opacity: .8;
+
+}
+
+@media (max-width:767px) and (min-width:602px){
+        #regist  {
+        width: 340px;
+        margin: 10px auto 10px;}
+        #Recommend{
+                width: 340px;
+                margin: 10px auto 10px;}
+}
+
+@media (max-width:601px){
+#regist  {
+        width: 500px;
+        margin: 10px auto 10px;}
+        #Recommend{
+                width: 500px;
+                margin: 10px auto 10px;}
+                #map {width: 500px;
+                        margin: 10px auto 10px;}
+}
+
+@media (min-width:768px){
+                #Recommend{
+                        margin-left:10px;}
+                        #map { margin-right:10px}
+        }
 
 
-
-
-
-
+        /* FOOTER */
+.panel-footer {
+        margin-top: 30px;
+        padding-top: 35px;
+        padding-bottom: 30px;
+        background-color: #222;
+        border-top: 0;
+      }
+      .panel-footer div.row {
+        margin-bottom: 35px;
+      }
+      #hours, #address {
+        line-height: 2;
+      }
+      #hours > span, #address > span {
+        font-size: 1.3em;
+      }
+      #address p {
+        color: #557c3e;
+        font-size: .8em;
+        line-height: 1.8;
+      }
+      #testimonials {
+        font-style: italic;
+      }
+      #testimonials p:nth-child(2) {
+        margin-top: 25px;
+      }
+      /* END FOOTER */
 
