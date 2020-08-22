@@ -8,7 +8,7 @@ $(document).ready(function()  {
   });
 });
 
-
+/*
 (function (global) {
 
   var dc = {};
@@ -314,4 +314,4 @@ $(document).ready(function()  {
   global.$dc = dc;
   
   })(window);
-  
+  */
