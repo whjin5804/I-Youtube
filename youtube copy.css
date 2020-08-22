@@ -174,12 +174,12 @@ h2{color:black;}
 }
 
 #Recommend {
-        background: url('../I&youtube/image/recommend.png') no-repeat;
+        background: url('recommend.png') no-repeat;
         background-position: center;
 }
 
 #regist {
-        background: url('../I&youtube/image/regist.png') no-repeat;
+        background: url('regist.png') no-repeat;
         background-position: center;
 } 
 
